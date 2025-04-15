@@ -1,0 +1,140 @@
+
+.header{
+    position: fixed;
+    animation: fade-in;
+    z-index:6;
+    width: 100%;
+    background-color: white;
+    &.open{
+        .header__toggle{//mobile menu toggle
+ 
+            >span:nth-child(2){
+                opacity: 0;
+            }
+            >span:first-child{
+                transform:rotate(45deg);
+            }
+            >span:last-child{
+                transform: rotate(-45deg);
+            }
+    
+        }
+        .overlay{
+            opacity: 1;
+            visibility: visible;
+        }
+        .header__menu{
+            left: 0;
+        }
+    }
+    &__toggle{//mobile menu toggle
+        position: relative;
+        margin-right: 0.937rem;
+        > span{
+            display:block;
+            width:1.625rem;
+            height:0.187rem;
+            background-color:#000;
+            transition: all 300ms ease-in-out;
+            transform-origin: 2px 2px;
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+
+            
+        }
+    }
+    &__logo{
+        img {
+            width: 8.8125rem;
+            height: 1.375rem;
+          }
+    }
+    &__links{
+
+        a{
+            color:$darkGrayishBlue;
+            transition:color 200ms ease-in-out;
+            position: relative;
+            // min-width: 100px;
+
+            &:not(:last-child){
+                margin-right: 2.125rem;
+            }
+            &:hover{
+                color:$veryDarkBlue;
+            }
+
+            &::before{
+                content:"";
+                position:absolute;
+                top:12px;
+                left:50%;
+                width:50px;
+                height: 50px;
+                border:4px solid $black;
+                transform: translateX(-50%) translateY(-50%) scale(0.5);
+                border-radius: 5%;
+                background: transparent;
+                opacity: 0;
+                transition: all 0.3s;
+                z-index: -1;
+            }
+            &:hover::before{
+                opacity: 1;
+                width: 250%;
+            }
+        }
+    }
+
+    &__cart {
+        img{
+            width: 1.562rem;
+            height: 1.562rem;
+        }
+        margin-right: 2.75rem;
+    }
+    &__avatar{
+        img{
+            width: 3.125rem;
+            height: 3.125rem;
+        }
+    }
+    nav{
+        padding-top:1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .overlay{
+        // opacity: 0;
+        position:fixed;
+        background-image:linear-gradient($veryDarkBlue,transparent);
+        top:4.8rem;
+        right:0px;
+        bottom:0px;
+        left:0px;
+        animation:fade-in 300ms ease-in-out;
+    }
+    &__menu{
+        position:fixed;
+        top:4.8rem;
+        margin:0;
+        width: 60%;
+        left:-100%;
+        background: white;
+        text-align: left;
+        padding-left: 1.25rem;
+        padding-top: 2.312rem;
+        height: 100vh;
+        a{
+            display: block;
+            margin-bottom:1.5rem;
+            font-size: $font-med;
+            font-weight: 900;
+            color:$veryDarkBlue;
+        }
+        a::not(last-child){
+            margin-bottom:1.5rem;
+        }
+    }
+}
