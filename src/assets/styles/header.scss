@@ -60,7 +60,7 @@
         ul li a{
             color:$darkGrayishBlue;
             transition:color 200ms ease-in-out;
-            position: relative;
+            // position: relative;
             // min-width: 100px;
 
             &:not(:last-child){
@@ -95,6 +95,7 @@
             li a{
             &::before{
                 content: unset !important;
+                opacity: 0 !important;
             } 
             &:hover::before{
                 opacity: 0 !important;
@@ -173,7 +174,7 @@
   }
 
   nav li:hover .navbar-menu-dropdown {
-    display: flex;
+    // display: flex;
   }
 
   .hover-animation-1{

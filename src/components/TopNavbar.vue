@@ -15,7 +15,7 @@
         <ul class="flex justify-between">
           <li>
             <a href="#">Collections <span class="arrow">▼</span></a>
-            <ul class="navbar-menu-dropdown">
+            <ul class="navbar-menu-dropdown transition delay-150 duration-300 ease-in-out">
               <li><a href="#">Web Development</a></li>
               <li><a href="#">Mobile Apps</a></li>
               <li><a href="#">SEO</a></li>

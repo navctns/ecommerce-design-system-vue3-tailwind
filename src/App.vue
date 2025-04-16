@@ -2,24 +2,18 @@
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 import LogoSVG from "./assets/logo.svg?component";
-import TopNavbar from "./components/TopNavbar.vue";
+// import TopNavbar from "./components/TopNavbar.vue";
+import TopNavbarTailwindHeadlessUi from "./components/TopNavbarTailwindHeadlessUI.vue";
+import TopNavbarTailwind from './components/navbar/TopNavbarTailwind.vue';
+import TopNavbarModel1 from './components/navbar/model-1/TopNavbarModel1.vue';
 </script>
 
 <template>
-  <top-navbar></top-navbar>
+  <top-navbar-tailwind></top-navbar-tailwind>
+  <top-navbar-tailwind-headless-ui></top-navbar-tailwind-headless-ui>
+  <top-navbar-model-1></top-navbar-model-1>
   <header>
-    <div class="box">
-      box
-    </div>
-    <div class="border border-black text-red-900">border black</div>
-    <div class="flex flex-row">
-      <div>item 1</div>
-      <div>item 2</div>
-    </div>
-    <LogoSVG alt="Vite logo" class="logo" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
