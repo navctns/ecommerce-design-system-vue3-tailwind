@@ -6,6 +6,7 @@ import LogoSVG from "./assets/logo.svg?component";
 import TopNavbarTailwindHeadlessUi from "./components/TopNavbarTailwindHeadlessUI.vue";
 import TopNavbarTailwind from './components/navbar/TopNavbarTailwind.vue';
 import TopNavbarModel1 from './components/navbar/model-1/TopNavbarModel1.vue';
+import ProductItemCard from "./components/cards/ProductItemCard.vue";
 </script>
 
 <template>
@@ -21,6 +22,13 @@ import TopNavbarModel1 from './components/navbar/model-1/TopNavbarModel1.vue';
       </nav>
     </div>
   </header>
+  <!-- <div class="grid grid-flow-col grid-rows-3 gap-4"> -->
+  <div class="grid grid-cols-4 grid-rows-3 gap-4">
+    <product-item-card class="col-span-1"></product-item-card>
+    <product-item-card class="col-span-1"></product-item-card>
+    <product-item-card class="col-span-4"></product-item-card>
+    <product-item-card class="col-span-4"></product-item-card>
+  </div>
 
   <RouterView />
 </template>
