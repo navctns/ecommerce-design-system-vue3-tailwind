@@ -7,6 +7,7 @@ import TopNavbarTailwindHeadlessUi from "./components/TopNavbarTailwindHeadlessU
 import TopNavbarTailwind from './components/navbar/TopNavbarTailwind.vue';
 import TopNavbarModel1 from './components/navbar/model-1/TopNavbarModel1.vue';
 import ProductCards from "./views/ProductCards.vue";
+import CustomerRatingItem from './components/cards/CustomerRatingItem.vue';
 </script>
 
 <template>
@@ -25,6 +26,19 @@ import ProductCards from "./views/ProductCards.vue";
   <!-- <div class="grid grid-flow-col grid-rows-3 gap-4"> -->
   <h5>Work Card Item</h5>
   <ProductCards></ProductCards>
+  <h5>Rating Cards</h5>
+  <div class="tab-slider flex overflow-x-auto pb-8 gap-6">
+    <customer-rating-item></customer-rating-item>
+  </div>
+  <h5 class="mb-4">Button Designs</h5>
+  <button class="border border-gray-300 text-black text-sm px-6 py-2 rounded-full hover:bg-gray-100 transition">
+  View All
+</button>
+<h5 class="mb-4">Dark Button</h5>
+<button class="bg-black text-white text-sm px-8 py-3 rounded-full hover:bg-gray-800 transition">
+  Add to Cart
+</button>
+
   <RouterView />
 </template>
 
