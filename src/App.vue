@@ -7,6 +7,7 @@ import TopNavbarTailwindHeadlessUi from "./components/TopNavbarTailwindHeadlessU
 import TopNavbarTailwind from './components/navbar/TopNavbarTailwind.vue';
 import TopNavbarModel1 from './components/navbar/model-1/TopNavbarModel1.vue';
 import ProductItemCard from "./components/cards/ProductItemCard.vue";
+import ProductCards from "./views/ProductCards.vue";
 </script>
 
 <template>
@@ -26,10 +27,12 @@ import ProductItemCard from "./components/cards/ProductItemCard.vue";
   <div class="grid grid-cols-4 grid-rows-3 gap-4">
     <product-item-card class="col-span-1"></product-item-card>
     <product-item-card class="col-span-1"></product-item-card>
-    <product-item-card class="col-span-4"></product-item-card>
-    <product-item-card class="col-span-4"></product-item-card>
+    <!-- <product-item-card class="col-span-4"></product-item-card> -->
+    <!-- <product-item-card class="col-span-4"></product-item-card> -->
   </div>
-
+  <h5>Work Card Item</h5>
+  <work-card-items-list></work-card-items-list>
+  <ProductCards></ProductCards>
   <RouterView />
 </template>
 

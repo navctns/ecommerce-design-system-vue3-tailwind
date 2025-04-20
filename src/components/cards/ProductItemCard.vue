@@ -10,13 +10,13 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   title: {
     type: String,
     default:'Product title'
   }
 });
-console.log(props);
+// console.log(props);
 </script>
 
 <style>
