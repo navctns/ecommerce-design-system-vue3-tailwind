@@ -10,6 +10,7 @@ import ProductCards from "./views/ProductCards.vue";
 import CustomerRatingItem from './components/cards/CustomerRatingItem.vue';
 import RadioButtonsTagDesign from './components/forms/radio-button-group/RadioButtonsTagDesign.vue';
 import RadioButtonCircle from './components/forms/radio-button-group/RadioButtonCircle.vue';
+import CountSetter from "./components/buttons/CountSetter.vue";
 </script>
 
 <template>
@@ -48,6 +49,9 @@ import RadioButtonCircle from './components/forms/radio-button-group/RadioButton
     <RadioButtonsTagDesign/>
     <h6>Design 2</h6>
     <RadioButtonCircle/>
+    <h5>Count Setter</h5>
+    <p>Sets count for an item to add to cart or checkout</p>
+    <CountSetter/>
   </div>
   <RouterView />
 </template>
