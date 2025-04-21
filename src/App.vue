@@ -9,6 +9,7 @@ import TopNavbarModel1 from './components/navbar/model-1/TopNavbarModel1.vue';
 import ProductCards from "./views/ProductCards.vue";
 import CustomerRatingItem from './components/cards/CustomerRatingItem.vue';
 import RadioButtonsTagDesign from './components/forms/radio-button-group/RadioButtonsTagDesign.vue';
+import RadioButtonCircle from './components/forms/radio-button-group/RadioButtonCircle.vue';
 </script>
 
 <template>
@@ -45,6 +46,8 @@ import RadioButtonsTagDesign from './components/forms/radio-button-group/RadioBu
     <h6>Radio buttons tag design</h6>
     <h6>Design 1</h6>
     <RadioButtonsTagDesign/>
+    <h6>Design 2</h6>
+    <RadioButtonCircle/>
   </div>
   <RouterView />
 </template>
