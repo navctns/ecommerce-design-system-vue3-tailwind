@@ -1,8 +1,8 @@
 !<template>
-  <div class="border flex border-gray-300 text-black text-sm px-6 py-2 rounded-full hover:bg-gray-100 transition">
-      <button @click="decrement">-</button>
-      <div class="mx-2">{{ count }}</div>
-      <button @click="increment">+</button>
+  <div class="border flex items-center border-gray-300 text-black text-sm px-6 py-2 rounded-full hover:bg-gray-100 transition">
+      <button @click="decrement" class="text-xl font-semibold">-</button>
+      <div class="mx-5">{{ count }}</div>
+      <button @click="increment" class="text-xl font-semibold">+</button>
     </div>
 </template>
 
