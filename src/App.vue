@@ -13,6 +13,7 @@ import RadioButtonCircle from './components/forms/radio-button-group/RadioButton
 import CountSetter from "./components/buttons/CountSetter.vue";
 // import PriceRangeSelectorBar from './components/forms/price-range-selector/PriceRangeSelectorBar.vue';
 import PriceRangeSlider from './components/forms/price-range-selector/PriceRangeSlider.vue';
+import AccordionDesign1 from './components/accordion/AccordionDesign1.vue';
 </script>
 
 <template>
@@ -57,7 +58,18 @@ import PriceRangeSlider from './components/forms/price-range-selector/PriceRange
     <h5 class="my-3">Price Range Selector bar</h5>
     <!-- <price-range-selector-bar></price-range-selector-bar> -->
     <price-range-slider></price-range-slider>
+    <h5>Accordions</h5>
+    <div class="tab-slider flex overflow-x-auto pb-8 gap-6">
+    <accordion-design-1>
+      <ul>
+        <li>Nike</li>
+        <li>Addidas</li>
+        <li>My Designation</li>
+        <li>Bolerk</li>
+      </ul>
+    </accordion-design-1>
   </div>
+</div>
   <RouterView />
 </template>
 
