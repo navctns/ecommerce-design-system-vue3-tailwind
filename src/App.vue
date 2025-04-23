@@ -11,6 +11,8 @@ import CustomerRatingItem from './components/cards/CustomerRatingItem.vue';
 import RadioButtonsTagDesign from './components/forms/radio-button-group/RadioButtonsTagDesign.vue';
 import RadioButtonCircle from './components/forms/radio-button-group/RadioButtonCircle.vue';
 import CountSetter from "./components/buttons/CountSetter.vue";
+// import PriceRangeSelectorBar from './components/forms/price-range-selector/PriceRangeSelectorBar.vue';
+import PriceRangeSlider from './components/forms/price-range-selector/PriceRangeSlider.vue';
 </script>
 
 <template>
@@ -52,6 +54,9 @@ import CountSetter from "./components/buttons/CountSetter.vue";
     <h5>Count Setter</h5>
     <p>Sets count for an item to add to cart or checkout</p>
     <CountSetter/>
+    <h5 class="my-3">Price Range Selector bar</h5>
+    <!-- <price-range-selector-bar></price-range-selector-bar> -->
+    <price-range-slider></price-range-slider>
   </div>
   <RouterView />
 </template>
