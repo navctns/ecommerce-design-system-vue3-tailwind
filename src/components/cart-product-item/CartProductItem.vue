@@ -12,7 +12,7 @@
     <span class="text-lg font-semibold text-gray-400 line-through mt-3">$260</span>
   </div>
     <div class="h-full flex flex-col justify-between">
-        <div>del btn</div>
+        <div><img src="../../assets/images/icons8-delete-button-32.png" alt=""></div>
         <CountSetter/>
     </div>
 </div>
