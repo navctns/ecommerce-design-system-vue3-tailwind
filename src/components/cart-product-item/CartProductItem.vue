@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 bg-white rounded-2xl shadow-md flex">
+  <div class="p-4 bg-white flex borde border-b">
     <div class="w-32">
         <img src="../../assets/images/t-shirt-img.jpg" alt="Skinny Fit Jeans" class="rounded-lg w-full mb-4" />
     </div>
