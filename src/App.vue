@@ -14,6 +14,7 @@ import CountSetter from "./components/buttons/CountSetter.vue";
 // import PriceRangeSelectorBar from './components/forms/price-range-selector/PriceRangeSelectorBar.vue';
 import PriceRangeSlider from './components/forms/price-range-selector/PriceRangeSlider.vue';
 import AccordionDesign1 from './components/accordion/AccordionDesign1.vue';
+import SimplePagination from "./components/pagination/SimplePagination.vue";
 </script>
 
 <template>
@@ -68,7 +69,10 @@ import AccordionDesign1 from './components/accordion/AccordionDesign1.vue';
         <li>Bolerk</li>
       </ul>
     </accordion-design-1>
+
   </div>
+  <h5 class="mt-4">Simple Pagination</h5>
+  <SimplePagination/>
 </div>
   <RouterView />
 </template>
