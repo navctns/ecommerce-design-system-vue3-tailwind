@@ -15,6 +15,7 @@ import CountSetter from "./components/buttons/CountSetter.vue";
 import PriceRangeSlider from './components/forms/price-range-selector/PriceRangeSlider.vue';
 import AccordionDesign1 from './components/accordion/AccordionDesign1.vue';
 import SimplePagination from "./components/pagination/SimplePagination.vue";
+import CartProductItem from "./components/cart-product-item/CartProductItem.vue";
 </script>
 
 <template>
@@ -73,6 +74,8 @@ import SimplePagination from "./components/pagination/SimplePagination.vue";
   </div>
   <h5 class="mt-4">Simple Pagination</h5>
   <SimplePagination/>
+  <h5 class="mt-4 mb-3">Cart Product Item</h5>
+  <CartProductItem/>
 </div>
   <RouterView />
 </template>
